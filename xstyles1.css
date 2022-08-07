@@ -397,13 +397,13 @@ font-size: 18px;
 .salaryl{
 	margin-top: 0.2em;
 	position: absolute;
-	background-color: none;
+	background: none;
 	left: 0px;
 	font-size: 1.1em;
 	border-radius: 4px;
 	border-style: solid; /*костыль*/
 	border-color: transparent;
-	width: 27px;
+	width: 22px;
     border-right: none;
 	outline: none
 	
