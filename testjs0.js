@@ -362,13 +362,15 @@ function stick(){
 		 topEdge=master.getBoundingClientRect().bottom+pageYOffset+15;
 		 past=0;
          flag=0;
+		 
 		 fake.style=none;//был какой-то лютый баг из-за мелкого изменения размера блока поиска
 		if(block.getBoundingClientRect().bottom+pageYOffset>downEdge){ //граничный нижний блок
 				  block.style.bottom=0;
 				 
 		}
+		if(height>=window.innerHeight){
 		fake.style.top=(block.getBoundingClientRect().top+pageYOffset-115)+"px"; //неподвижность при смене направления за счет нподвижности фильтров
-		
+		}
 	});
 	let debug=document.getElementsByClassName("debug")[0];
 	document.addEventListener('scroll', function(){
