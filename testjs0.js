@@ -356,7 +356,7 @@ function stick(){
 	 let downEdge=footer.getBoundingClientRect().top+pageYOffset-10;
      let size=document.getElementById("size");
 	let fake=document.getElementById("fake");
-	
+	let height=block.offsetHeight;
     window.addEventListener('resize', event =>{
 		downEdge=footer.getBoundingClientRect().top+pageYOffset-10;
 		 topEdge=master.getBoundingClientRect().bottom+pageYOffset+15;
@@ -381,7 +381,7 @@ function stick(){
 
 		
 		let now=document.body.scrollTop||(document.documentElement&&document.documentElement.scrollTop);//не спрашивайте. это реально дичь с лисой
-		let height=block.offsetHeight;
+		
      
 		if(height<size.scrollHeight){
 
