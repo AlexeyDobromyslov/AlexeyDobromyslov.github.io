@@ -416,7 +416,7 @@ font-size: 18px;
 	border-color: white;
 }
 .textbox{
-	text-indent:24px;
+	padding-left: 25px;
 	font-size: 1.1em;
 }
 .pagenav{
